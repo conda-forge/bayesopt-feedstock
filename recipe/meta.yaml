@@ -9,12 +9,13 @@ source:
   sha256: f4e60cfac380eccd2d1adc805b752b5bd22a1d8a27dc6aeb630c403adc04f28c
 
 build:
-  number: 0
+  number: 1
   skip: True  # [not linux]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake
     - make   # [unix]
     - ninja  # [win]
@@ -47,6 +48,7 @@ outputs:
     requirements:
       build:
         - {{ compiler('cxx') }}
+        - {{ stdlib("c") }}
         - cmake
         - make   # [unix]
         - ninja  # [win]
