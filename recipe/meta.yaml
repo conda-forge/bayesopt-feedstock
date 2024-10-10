@@ -26,6 +26,7 @@ requirements:
     - cython <3
     - python
     - pip
+    - setuptools
   run:
     - python
 
@@ -59,6 +60,7 @@ outputs:
         - cython <3
         - python
         - pip
+        - setuptools
         - {{ pin_subpackage("bayesopt", exact=True) }}
       run:
         - python
