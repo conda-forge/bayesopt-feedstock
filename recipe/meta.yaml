@@ -56,7 +56,7 @@ outputs:
       host:
         - libboost-headers
         - nlopt
-        - numpy
+        - numpy <2
         - cython <3
         - python
         - pip
