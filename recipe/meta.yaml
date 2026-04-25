@@ -11,7 +11,7 @@ source:
     - bayesopt-pyx-python3.patch
 
 build:
-  number: 7
+  number: 8
   skip: True  # [not linux]
 
 requirements:
