@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -212,7 +212,7 @@
+     add_dependencies(esopt nlopt)
+   ENDIF(NLOPT_BUILD)
+ 
+-  TARGET_LINK_LIBRARIES(esopt ${EXT_LIBS} ${PYTHON_LIBRARIES} )
++  TARGET_LINK_LIBRARIES(esopt ${EXT_LIBS} )
+ 
+   IF(NOT WIN32)
+     # Kind of a hack but it works
